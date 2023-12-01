@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="icons.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <title>WeStand Dashboard</title>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,
+300&family=Nunito:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;0,1000;1,200;1,300;1,400;1,500;1,600;1,700;1,800;
+1,900;1,1000&family=Space+Grotesk:wght@500&family=Ubuntu:wght@300;400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="dashboard"> <!--Dashboard starts-->
+        <section class="navigation"> <!--Navbar starts-->
+            <img src="img/favicon_32x32.png" alt="" class="logo">
+
+                <div>
+                    <span class="material-symbols-outlined"> dashboard</span>
+                    <span class="material-symbols-outlined">request_quote</span>
+                    <span class="material-symbols-outlined">manage_accounts</span>
+                    <span class="material-symbols-outlined">playlist_add</span>
+                    <span class="material-symbols-outlined">contract</span>
+                </div>
+
+                <img src="img/EU cortado.png" alt="User Image"width = "70" class="user">
+        </section> <!--Navbar ends-->
+
+        <section class="main"> <!--Main starts-->
+            <div class="search"><!--Search-->
+                <form action="">
+                    <input type="text" name="search" id="searchProject"
+                    placeholder="Search Here">
+                    <span class="material-symbols-outlined">search</span>
+                </form>
+                <div class="notification">
+                    <span class="material-symbols-outlined">notifications</span>
+                    <span class="material-symbols-outlined">edit</span>
+                </div>
+            </div><!--Search ends-->
+            <div class="title">
+                <h1>Dashboard</h1>
+                    <label for="projects">Sort By</label>
+                    <select name="projects" id="projectFilter">
+                        <option value="">...</option>
+                        <option value="recents">Projetos Recentes</option>
+                        <option value="finished">Projetos Concluídos</option>
+                        <option value="ongoing">Em andamento</option>
+                        <option value="stalled">Parados</option>
+                    </select>
+
+            </div>
+
+            <div  class="project-list"> <!--Project List-->
+
+                <div class="project" data-status="ongoing" title="Em andamento"> <!--Project1-->
+                    <div class="category category_color1"></div>
+                        <h2>Orçamento Cliente</h2>
+                        <p>Ativo Recentemente</p>
+
+                        <ul class="activity">
+                            <li>Stand Base</li>
+                            <li>Fase de Design</li>
+                        </ul>
+                        <div class="meta">
+                           <div class="contributors">
+                            <img src="img/nossostand_logo.jpg" alt="" class="stack">
+                            <img src="img/EU cortado.png" alt="" class="stack">
+                            <img src="img/homem-bonito-posando-e-sorrindo.jpg" alt="" class="stack">
+                           </div> 
+                           <span
+                           class="material-symbols-outlined">more_vert
+                            
+                           </span>
+                        </div>
+                </div> <!--Project1 end-->
+
+                <div class="project" data-status="ongoing" title="Em andamento"> <!--Project2-->
+                    <div class="category category_color4"></div>
+                        <h2>Proposta Teste</h2>
+                        <p>2 dias atrás</p>
+
+                        <ul class="activity">
+                            <li>Briefing</li>
+                            <li>Orçamento Inicial</li>
+                        </ul>
+                        <div class="meta">
+                           <div class="contributors">
+                            <img src="img/nossostand_logo.jpg" alt="">
+                            <img src="img/EU cortado.png" alt="">
+                           </div> 
+                           <span
+                           class="material-symbols-outlined">more_vert
+                            
+                           </span>
+                        </div>
+                </div> <!--Project2 end-->
+
+                <div class="project" data-status="ongoing" title="Em andamento"> <!--Project3-->
+                    <div class="category category_color3"></div>
+                        <h2>Reunião Sprint</h2>
+                        <p>Há 1 semana</p>
+
+                        <ul class="activity">
+                            <li>Definições de evolução</li>
+                            <li>Apresentação do MVP</li>
+                        </ul>
+                        <div class="meta">
+                           <div class="contributors">
+                            <img src="img/nossostand_logo.jpg" alt="">
+                           </div> 
+                           <span
+                           class="material-symbols-outlined">more_vert
+                            
+                           </span>
+                        </div>
+                </div> <!--Project3 end-->
+
+
+            <div class="project" data-status="finished" title="Projeto Finalizado"> <!--Project4-->
+                <div class="category category_color4"></div>
+                    <h2>Conclusão de Projeto</h2>
+                    <p>Há 2 semanas</p>
+
+                    <ul class="activity">
+                        <li>Reunião Final</li>
+                        <li>Apresentação do Stand</li>
+                    </ul>
+                    <div class="meta">
+                       <div class="contributors">
+                        <img src="img/nossostand_logo.jpg" alt="" class="stack">
+                        <img src="img/EU cortado.png" alt="" class="stack">
+                        <img src="img/homem barba.jpg" alt="" class="stack">
+                       </div> 
+                       <span
+                       class="material-symbols-outlined">more_vert
+                        
+                       </span>
+                    </div>
+            </div> <!--Project4 end-->
+
+            <div class="project" data-status="finished" title="Projeto Finalizado"> <!--Project5-->
+                <div class="category category_color4"></div>
+                    <h2>Conclusão de Projeto</h2>
+                    <p>Há 2 semanas</p>
+
+                    <ul class="activity">
+                        <li>Reunião Final</li>
+                        <li>Apresentação do Stand</li>
+                    </ul>
+                    <div class="meta">
+                       <div class="contributors">
+                        <img src="img/nossostand_logo.jpg" alt="">
+                       </div> 
+                       <span
+                       class="material-symbols-outlined">more_vert
+                        
+                       </span>
+                    </div>
+            </div> <!--Project5 end-->
+
+            <div class="project" data-status="finished" title="Projeto Finalizado"> <!--Project6-->
+                <div class="category"></div>
+                    <h2>Conclusão de Projeto</h2>
+                    <p>Há 2 semanas</p>
+
+                    <ul class="activity">
+                        <li>Reunião Final</li>
+                        <li>Apresentação do Stand</li>
+                    </ul>
+                    <div class="meta">
+                       <div class="contributors">
+                        <img src="img/nossostand_logo.jpg" alt="">
+                       </div> 
+                       <span
+                       class="material-symbols-outlined">more_vert
+                        
+                       </span>
+                    </div>
+            </div> <!--Project6 end-->
+        </div> <!--Project List End-->
+
+        </section> <!--Main ends-->
+    
+        <section class="secondary"> <!--Secondary starts-->
+            <div class="chart">
+                <h2>Projetos Totais</h2>
+                <canvas id ="myChart" width="400" height="400"></canvas>
+                <div class="complete">
+                    <h3>3 completed</h3>
+                    <p>from 5 projects</p>
+                </div>
+            </div>
+            <div class="recent-projects"><!--Recent Projects-->
+                <div class="listing">
+                    <div class="title">
+                        <div class="category category_color4"></div>
+                        <h2>Layout</h2>
+                        <p>Rafael WeStand</p>
+                    </div>
+                    <span class="material-symbols-outlined">more_vert</span>
+                </div>
+                <div class="listing">
+                    <div class="title">
+                        <div class="category category_color3"></div>
+                        <h2>Branding</h2>
+                        <p>Time WeStand</p>
+                    </div>
+                    <span class="material-symbols-outlined">more_vert</span>
+                </div>
+
+                <div class="listing">
+                    <div class="title">
+                        <div class="category category_color2"></div>
+                        <h2>Branding</h2>
+                        <p>Time WeStand</p>
+                    </div>
+                    <span class="material-symbols-outlined">more_vert</span>
+                </div>
+
+                <div class="listing">
+                    <div class="title">
+                        <div class="category category_color1"></div>
+                        <h2>Design Gráfico</h2>
+                        <p>Time WeStand</p>
+                    </div>
+                    <span class="material-symbols-outlined">more_vert</span>
+                </div>
+
+            </div><!--Recent Projects Ends-->
+
+        </section> <!--Secondary ends-->
+
+    </div> <!--Dashboard ends-->
+<script src="script.js"> </script>
+</body>
+</html>

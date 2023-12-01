@@ -1,0 +1,318 @@
+*{
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Nunito', sans-serif;
+    font-family: 'Space Grotesk', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+body{
+    margin: 0px;
+    background: rgb(227, 238, 248);
+}
+.dashboard{
+    padding: 0px 15px;
+    margin: 0 auto;
+}
+
+/*============================
+          Navigation
+==============================*/
+ .dashboard .navigation{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10px;
+ }
+ .dashboard .navigation img.logo{
+    width: 50px;
+    height: 50px;
+ }
+
+ .dashboard .navigation img.user{
+    width: 50px;
+    height: 50px;
+    border-radius: 10px;
+ }
+ .dashboard .navigation div .material-icons-outlined{
+   margin-left: 5px;
+   margin-right: 5px;
+   font-size: 30px;
+   color: #727272;
+ }
+ .dashboard .navigation .navigation div{
+    margin-top: 10px;
+  }
+  /*============================
+          Main Dashboard
+==============================*/  
+/* Search*/
+.dashboard .main .search form{
+    position: relative;
+}
+.dashboard .main .search{
+    margin-top: 30px;
+}
+.dashboard .main .search form input{
+   width: 100%;
+   font-size: 16px;
+   padding: 10px 10px 10px 60px;
+   border: 1px solid #dadada;
+   background-color: rgba(0, 0, 0, 0);
+}
+
+.dashboard .main .search form span{
+    position: absolute;
+    left: 15px;
+    top: 10px;
+    color: #727272;
+ }
+ .dashboard .main .search .notification{
+   margin-top: 20px;
+ }
+ .dashboard .main .search .notification span:nth-child(1){
+    margin-right: 15px;
+    position: relative;
+  }
+  .dashboard .main .search .notification span:nth-child(1)::before{
+    content: '';
+    width: 10px;
+    height: 10px;
+    background-color: orange;
+    position: absolute;
+    border-radius: 50%;
+    top: 5px;
+  }
+
+  /*  Title */
+
+.dashboard .main .title{
+    margin-bottom: 30px;
+  }
+  .dashboard .main .title h1{
+    font-size: 35px;
+    line-height: 0px;
+  }
+  .dashboard .main .title form{
+   margin-top: 40px;
+  }
+  .dashboard .main .title form label{
+    margin-right: 15px;
+    color: #727272;
+    font-size: 16px;
+   }
+   .dashboard .main .title form select{
+    font-size: 16px;
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+   }
+
+   /* Project List */
+   .dashboard .main .project-list .project h2{
+    font-size: 20px;
+    line-height: 0;
+   }
+
+   .dashboard .main  .project-list .project p{
+    color: #727272;
+   }
+
+   .dashboard .main  .project-list .project ul{
+    list-style: none;
+    position: relative;
+    margin-left: 0px;
+    padding-left: 0px;
+   }
+   .dashboard .main  .project-list .project ul li{
+    position: relative;
+    color: #727272;
+    margin-left: 15px;
+   }
+   .dashboard .main  .project-list .project ul li::before{
+    content: "\268A";
+    position: absolute;
+    left: -15px;
+    top: -2px;
+   }
+
+   .dashboard .main  .project-list .project .meta img{
+    width: 50px;
+    height: 50px;
+    border-radius: 40px;
+    border: 3px solid aliceblue;
+   }
+   .dashboard .main  .project-list .project .meta img.stack{
+    margin-left: -20px;
+   }
+   .dashboard .main  .project-list .project .meta{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+   }
+   .dashboard .main .project-list .project{
+   padding: 20px 20px 20px 60px;
+   background-color: white;
+   box-shadow: 1px 1px 40px rgba(0, 0, 0, 0.01);
+   margin-bottom: 20px;
+   border-radius: 10px;
+   position: relative;
+   }
+   .dashboard .main .project-list .category{
+    width: 30px;
+    height: 50px;
+    background-color: rebeccapurple;
+    border-radius: 0px 10px 10px 0px ;
+    position: absolute;
+    left: 0;
+    }
+    .category_color1{
+        background-color: rebeccapurple !important;
+    }
+    .category_color2{
+        background-color: tan !important;
+    }
+    .category_color3{
+        background-color: sandybrown !important;
+    }
+    .category_color4{
+        background-color: green !important;
+    }
+
+    /* ===================================
+        Secondary Statistic
+    =====================================*/
+    /* Chart */
+    .dashboard .secondary .chart .complete{
+        text-align: center;
+        margin: 40px 0px;
+    }
+    .dashboard .secondary .chart .complete h3{
+        line-height: 0px;
+    }
+    .dashboard .secondary .chart .complete p{
+        color: #727272;
+    }
+    .dashboard .secondary .chart{
+        background-color: white;
+        padding: 15px;
+        position: relative;
+        margin-bottom: 30px;
+    }
+    /* Recent Projects */
+    .dashboard .secondary .recent-projects .listing h2{
+        line-height: 0px;
+    }
+    .dashboard .secondary .recent-projects .listing p{
+        color: #727272;
+    }
+    .dashboard .secondary .recent-projects .listing{
+        display: flex;
+        justify-content: space-between;
+    }
+    .dashboard .secondary .recent-projects{
+        background-color: white;
+        padding: 15px 15px 15px 50px;
+        position: relative;
+        margin-bottom: 30px;
+    }
+    .dashboard .secondary .recent-projects .category{
+       width: 16px;
+       height: 16px;
+       border-radius: 16px;
+       position: absolute;
+       left: 10px;
+       margin-top: 20px;
+    }
+    /* ===================================
+        Media Query 768px
+    =====================================*/
+    @media only screen and (min-width: 768px){
+        /* Dashboard Search */
+            .dashboard .main .search{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 60px;
+            margin-bottom: 50px;
+        }
+        section.main .project-list{
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        section.main .project-list .project{
+            width: 47%;
+        }
+        section.main .project-list .project span{
+           margin: 15px;
+        }
+        /* Recent Projects */
+    section.secondary{
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: nowrap;
+        background-color: white;
+        padding-top: 70px;
+        }
+        section.secondary .chart{
+            width: 40%;
+        }
+        section.secondary .recent-projects{
+            width: 55%;
+        }
+        section.secondary .recent-projects .listing span{
+            margin-top: 15px;
+        }
+    }
+    @media only screen and (min-width: 1024px){
+        .dashboard .navigation,
+        .dashboard .navigation div span,
+        section.secondary{
+            display: block;
+        }
+        .dashboard .navigation{
+            width: 60px;
+            position: fixed;
+            z-index: 10;
+        }
+        section.main{
+            width: 60%;
+            margin-left: 90px;
+            margin-right: 20px;
+        }
+        section.secondary{
+            width: 27%;
+            padding-top: 0px;
+            position: fixed;
+            top: 20px;
+            right: 0px;
+            background-color: transparent;
+        }
+        section.secondary .chart,
+        section.secondary .recent-projects{
+            width: 100%;
+            border-radius: 10px;
+        }
+        .dashboard .navigation div{
+            margin-top: 22vh;
+            margin-bottom: 22vh;
+        }
+        .dashboard .navigation div span{
+            margin-top: 5vh;
+        }
+    }
+    @media only screen and (min-width: 1111px){
+        section.main .project-list .project{
+            width: 32%;
+        }
+        section.main{
+            width: 65%;
+        }
+    }
+    @media only screen and (min-width: 1500px){
+        section.secondary .project-list .listin:nth-child(4){
+            display: none;
+        }
+    }
+
+
+    
